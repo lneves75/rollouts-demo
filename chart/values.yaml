@@ -3,3 +3,7 @@ replicaCount: 20
 image:
   repository: argoproj/rollouts-demo
   tag: blue
+
+ingress:
+  enabled: true
+  host: dummy-sandbox.on.com
