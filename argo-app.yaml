@@ -8,13 +8,13 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: 'git@github.com:lneves75/rollouts-demo.git'
+    repoURL: 'https://github.com/lneves75/rollouts-demo.git'
     targetRevision: HEAD
-    path: charts
+    path: chart
     helm:
       parameters:
       - name: 'image.tag'
-        value: blue
+        value: red
   destination:
     server: https://kubernetes.default.svc
     namespace: default
