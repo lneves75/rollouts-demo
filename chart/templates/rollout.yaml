@@ -19,6 +19,7 @@ spec:
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
+          name: http
       topologySpreadConstraints:
       - maxSkew: 1
         topologyKey: kubernetes.io/hostname
